@@ -1,0 +1,32 @@
+[
+    {
+        "id": "0",
+        "Name": "Lê Xuân Huynh",
+        "Phone": "0983923430",
+        "Permission": 1
+    },
+    {
+        "id": "1",
+        "Name": "Lê Văn Luyện",
+        "Phone": "0324792749",
+        "Permission": 2
+    },
+    {
+        "id": "2",
+        "Name": "Ngô Bá Khá",
+        "Phone": "0923232223",
+        "Permission": 3
+    },
+    {
+        "id": "3",
+        "Name": "Huấn Hoa Hồng",
+        "Phone": "0903098230",
+        "Permission": 2
+    },
+    {
+        "id": "4",
+        "Name": "Lionel Messi",
+        "Phone": "0977654899",
+        "Permission": 1
+    }
+]

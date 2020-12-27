@@ -1,25 +1,55 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Nav from './Component/Nav';
+import Content from './Component/Content';
+import Form from './Component/Form';
+import * as firebase from './firebase';
+import { nodeData } from './firebase';
+import { connect } from 'react-redux';
+import AlertTest from './Component/AlertTest';
+// validate required input form thêm
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      status: true
+    }
+  }
+
+
+
+
+
+
+  render() {
+    const mystyle = {
+      paddingLeft: "50px",
+      paddingRight: "50px"
+    };
+    // console.log(this.props.state);
+    return (
+      <div className="App">
+        <AlertTest></AlertTest>
+        <Nav></Nav>
+        <div className="container mt-3" style={mystyle}>
+          <div className="row">
+            <Content></Content>
+            <Form></Form>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default App;
+
+const mapStateToProps = (state, ownProps) => {
+  return {
+    state: state
+  }
+}
+
+
+export default connect(mapStateToProps)(App)

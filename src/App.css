@@ -1,5 +1,39 @@
+.editForm{
+  /* width: 18rem; */
+  border-radius: 5px;
+  border: 1px solid gray;
+  /* background-color: red; */
+  padding: 20px 20px;
+  /* position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%); */
+}
+a{
+  text-decoration: none !important;
+}
+@media screen and (max-width: 767.98px) {
+  .nhucc{
+    padding: 15px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .editForm{
+    width: 70%;
+    position: fixed;
+    background-color: white;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+}
+.nhucc{
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
