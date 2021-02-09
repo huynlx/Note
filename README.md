@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[DEMO](https://huynh12345678.github.io/React_2-Redux/)
+[DEMO](https://huynh12345678.github.io/Note/)
 
 ## Available Scripts
 
